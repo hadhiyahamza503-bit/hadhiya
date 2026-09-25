@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Yamama Shawaya",
+  "description": "Premium Arabic and charcoal-fired grilled chicken restaurant with special flavored rice in Angadipuram, Perinthalmanna, Kerala.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
