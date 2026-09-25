@@ -60,7 +60,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#160205] text-[#FFF2D1] flex flex-col font-sans selection:bg-[#FFD600] selection:text-[#600A14]">
+    <div className="min-h-screen bg-[#180205] text-white flex flex-col font-sans selection:bg-[#FFE500] selection:text-[#500810]">
       {/* Header & Sticky Navigation */}
       <Navbar onOpenOrderModal={() => handleOpenOrder()} />
 
@@ -103,30 +103,30 @@ export default function App() {
       {/* Footer */}
       <Footer />
 
-      {/* Mobile Floating Action Bar for Fast Ordering - Red, Yellow & Gold Mixed */}
-      <div className="md:hidden fixed bottom-0 inset-x-0 z-30 bg-[#220409]/95 backdrop-blur-md border-t-2 border-[#FFD600]/50 p-2.5 flex items-center justify-between gap-2 shadow-2xl">
+      {/* Mobile Floating Action Bar for Fast Ordering - Red & Yellow Shades with Gold & White Writing */}
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-30 bg-[#25040B]/98 backdrop-blur-md border-t-2 border-[#FFE500]/60 p-2.5 flex items-center justify-between gap-2 shadow-2xl">
         <a
           href={`tel:${RESTAURANT_INFO.phones[0].raw}`}
-          className="flex-1 py-2.5 px-3 bg-gradient-to-r from-[#4A0A12] to-[#6A0E1C] text-[#FFE600] hover:text-[#FFFDE7] rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1.5 border border-[#FFD600]/50 active:scale-95 transition-all shadow-md"
+          className="flex-1 py-2.5 px-3 bg-gradient-to-r from-[#590C19] to-[#801024] text-white hover:text-[#FFD700] rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1.5 border border-[#FFE500]/50 active:scale-95 transition-all shadow-md"
         >
-          <Phone className="w-3.5 h-3.5 text-[#FFD600]" />
-          <span className="text-[#FFE600]">Call</span>
+          <Phone className="w-3.5 h-3.5 text-[#FFE500]" />
+          <span><span className="text-[#FFD700]">Call</span> <span className="text-white">Now</span></span>
         </a>
 
         <button
           onClick={() => handleOpenOrder()}
-          className="flex-[1.5] py-2.5 px-3 bg-gradient-to-r from-[#FFF066] via-[#FFD600] to-[#FFA000] text-[#3E070F] rounded-xl text-xs font-black uppercase tracking-wider text-center flex items-center justify-center gap-1.5 shadow-lg shadow-[#FFD600]/40 border border-[#FFF59D] active:scale-95 transition-all"
+          className="flex-[1.5] py-2.5 px-3 bg-gradient-to-r from-[#FFE500] via-[#FFD000] to-[#FF9E00] text-[#3D070F] rounded-xl text-xs font-black uppercase tracking-wider text-center flex items-center justify-center gap-1.5 shadow-lg shadow-[#FFE500]/40 border border-[#FFF8B3] active:scale-95 transition-all"
         >
-          <MessageCircle className="w-3.5 h-3.5 text-[#3E070F]" />
+          <MessageCircle className="w-3.5 h-3.5 text-[#3D070F]" />
           <span>Order Now</span>
         </button>
 
         <a
           href="#menu"
-          className="flex-1 py-2.5 px-3 bg-[#32060E] text-[#FFE600] rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1.5 border border-[#FFD600]/40 active:scale-95 transition-all"
+          className="flex-1 py-2.5 px-3 bg-[#380812] text-white rounded-xl text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1.5 border border-[#FFE500]/40 active:scale-95 transition-all"
         >
-          <Utensils className="w-3.5 h-3.5 text-[#FFD600]" />
-          <span>Menu</span>
+          <Utensils className="w-3.5 h-3.5 text-[#FFE500]" />
+          <span><span className="text-[#FFD700]">Our</span> <span className="text-white">Menu</span></span>
         </a>
       </div>
 

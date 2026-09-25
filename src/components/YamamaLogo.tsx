@@ -21,7 +21,7 @@ export const YamamaLogo: React.FC<YamamaLogoProps> = ({
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <div
-        className={`relative ${sizeMap[size]} rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-lg bg-[#25060A] flex-shrink-0 group-hover:scale-105 transition-transform duration-300`}
+        className={`relative ${sizeMap[size]} rounded-full overflow-hidden border-2 border-[#FFE500] shadow-lg bg-[#25060A] flex-shrink-0 group-hover:scale-105 transition-transform duration-300`}
       >
         <img
           src="/src/assets/images/yamama_official_logo_1790141855254.jpg"
@@ -33,13 +33,15 @@ export const YamamaLogo: React.FC<YamamaLogoProps> = ({
 
       {showText && (
         <div className="flex flex-col">
-          <span className="font-heading font-black text-xl sm:text-2xl text-[#FFDF78] tracking-wider leading-none group-hover:text-[#FFF2B8] transition-colors">
-            YAMAMA
+          {/* Half Gold Half White Write */}
+          <div className="font-heading font-black text-xl sm:text-2xl tracking-wider leading-none flex items-center gap-1">
+            <span className="text-[#FFD700]">YAMAMA</span>
+            <span className="text-white">SHAWAYA</span>
+          </div>
+          <span className="text-[10px] sm:text-xs font-bold tracking-[0.25em] text-[#FFE500] uppercase leading-tight mt-0.5">
+            CHARCOAL GRILL
           </span>
-          <span className="text-[10px] sm:text-xs font-bold tracking-[0.25em] text-[#E5C158] uppercase leading-tight">
-            SHAWAYA
-          </span>
-          <span className="text-[9px] font-semibold text-[#F5D77F] tracking-widest uppercase mt-0.5">
+          <span className="text-[9px] font-semibold text-white/80 tracking-widest uppercase mt-0.5">
             Refill Your Energy
           </span>
         </div>
